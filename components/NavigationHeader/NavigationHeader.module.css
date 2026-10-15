@@ -1,0 +1,60 @@
+.navigationContainer {
+  width: 100%;
+  border-bottom: 1px solid var(--color-border-default);
+  background-color: var(--inputs);
+}
+
+.navigationContent {
+  max-width: 1440px;
+  height: 72px;
+  margin: 0 auto;
+  padding-left: 64px;
+  padding-right: 64px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.brandLogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 136px;
+  height: 16px;
+  position: relative;
+  flex: 1;
+}
+
+.brandLogoIcon {
+  width: 136px;
+  height: 16px;
+}
+
+.navigationLinksList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex: 2;
+}
+
+.navigationLinkItem {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--grey-green);
+  padding: 4px 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.navigationLinkItem:hover,
+.navigationLinkItem:focus,
+.activeNavigationLinkItem {
+  color: var(--main);
+  outline: none;
+}
+
+.emptySpacerNode {
+  flex: 1;
+}

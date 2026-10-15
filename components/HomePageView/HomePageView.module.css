@@ -1,0 +1,77 @@
+.homePageSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  background-image:
+    linear-gradient(rgba(16, 24, 40, 0.4), rgba(16, 24, 40, 0.4)), url("/image/Hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .homePageSection {
+    background-image:
+      linear-gradient(rgba(16, 24, 40, 0.4), rgba(16, 24, 40, 0.4)), url("/image/Hero-2x.jpg");
+  }
+}
+
+.homePageContent {
+  width: 100%;
+  padding-top: 195px;
+  padding-bottom: 140px;
+  padding-left: 64px;
+  padding-right: 64px;
+  box-sizing: border-box;
+
+  font-weight: 600;
+  color: var(--inputs);
+}
+
+.homePageTitle {
+  margin-top: 0px;
+  margin-bottom: 16px;
+
+  font-size: 48px;
+  line-height: 67%;
+}
+
+.homePageSubtitle {
+  margin-top: 0px;
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  line-height: 133%;
+}
+
+.homePageButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 174px;
+  height: 56px;
+
+  padding: auto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+
+  background-color: var(--color-primary-light);
+
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.homePageButton:hover,
+.homePageButton:focus {
+  background-color: var(--color-primary-dark);
+  outline: none;
+}
