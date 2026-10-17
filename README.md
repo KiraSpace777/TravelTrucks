@@ -10,9 +10,14 @@ TravelTrucks — це сучасний вебзастосунок для ком�
 
 ### 1. Домашня сторінка (`/`)
 
-### 2. Сторінка каталогу (`/campers`)
+### 2. Сторінка каталогу (`/catalog`)
 
-### 3. Сторінка деталей кемпера (`/campers/{camperId}`)
+МАРШРУТ АПІ (`/campers`)
+МАРШРУТ АПІ (`/campers/filters`)
+
+### 3. Сторінка деталей кемпера (`/catalog/[camperId]`)
+
+МАРШРУТ АПІ (`/campers/{camperId}`)
 
 ### 4. Глобальна обробка помилок навігації
 
@@ -70,8 +75,6 @@ npm run dev
 - **РЕПОЗИТОРІЙ**: https://github.com/KiraSpace777/travel-trucks
 - **Головна сторінка додатку**: https://travel-trucks-one-blond.vercel.app/
 - **Документація бекенду (API)**: [https://campers-api.goit.study/docs](https://campers-api.goit.study/docs)
-
-<img alt="NextjsLogotype" data-slot="geist-logo" loading="eager" width="79" height="16" decoding="async" data-img="1" style="color:transparent" src="/_next/static/immutable/media/nextjs-logotype-light.00-_80jv8_dct.svg">
 
 # Next.js - React Framework for the Web (general information)
 

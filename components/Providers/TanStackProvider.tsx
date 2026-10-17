@@ -8,7 +8,7 @@ interface TanStackProviderProperties {
 }
 
 export const TanStackProvider = ({ children }: TanStackProviderProperties) => {
-  const [applicationQueryClient] = useState(
+  const [queryClientInstance] = useState(
     () =>
       new QueryClient({
         defaultOptions: {
@@ -20,5 +20,5 @@ export const TanStackProvider = ({ children }: TanStackProviderProperties) => {
       }),
   );
 
-  return <QueryClientProvider client={applicationQueryClient}>{children}</QueryClientProvider>;
+  return <QueryClientProvider client={queryClientInstance}>{children}</QueryClientProvider>;
 };

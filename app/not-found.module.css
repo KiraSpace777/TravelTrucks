@@ -1,0 +1,37 @@
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding-block: 80px;
+}
+
+.notFoundIcon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+
+.notFoundTitle {
+  font-size: 32px;
+  line-height: 130%;
+  margin-bottom: 12px;
+}
+
+.notFoundDescription {
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.backHomeButton {
+  color: var(--white);
+  background-color: var(--color-primary-light);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.backHomeButton:hover,
+.backHomeButton:focus {
+  background-color: var(--color-primary-dark);
+}

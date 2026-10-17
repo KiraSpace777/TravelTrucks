@@ -26,8 +26,8 @@ export const metadata = {
   title: "Campers Rental",
   description: "Find your ideal camper van or truck for traveling",
   icons: {
-    icon: "/camping.svg",
-    apple: "/camping.svg",
+    icon: "/caravan-camping.svg",
+    apple: "/caravan-camping.svg",
   },
   openGraph: {
     title: "TravelTrucks - Campers Rental",
