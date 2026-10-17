@@ -202,13 +202,16 @@ export const CampersFiltersSidebar = ({ onApplyFilters }: CampersFiltersSidebarP
             </label>
 
             <label className={styles.radioOptionItem}>
-              <input
-                type="radio"
-                name="transmissionGroup"
-                checked={localFiltersState.transmission === "manual"}
-                onChange={() => handleTransmissionChange("manual")}
-                className={styles.nativeRadioInput}
-              />
+              <span>
+                <input
+                  type="radio"
+                  name="transmissionGroup"
+                  checked={localFiltersState.transmission === "manual"}
+                  onChange={() => handleTransmissionChange("manual")}
+                  className={styles.nativeRadioInput}
+                />
+              </span>
+
               <span className={`${styles.optionTextLabel} interRegular`}>Manual</span>
             </label>
           </div>
@@ -219,12 +222,15 @@ export const CampersFiltersSidebar = ({ onApplyFilters }: CampersFiltersSidebarP
             Search
           </button>
           <button type="button" onClick={handleClearFiltersClick} className={styles.clearButton}>
-            <div className={styles.clearButtonContent}>
-              <svg className={styles.clearIcon}>
-                <use href="/sprite.svg#icon-close" />
-              </svg>
+            <span className={styles.clearButtonContent}>
+              <span>
+                <svg className={styles.clearIcon}>
+                  <use href="/sprite.svg#icon-close" />
+                </svg>
+              </span>
+
               <span>Clear filters</span>
-            </div>
+            </span>
           </button>
         </div>
       </form>

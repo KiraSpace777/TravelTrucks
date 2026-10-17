@@ -1,0 +1,69 @@
+.backdropOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 24, 40, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modalLoaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 543px;
+  height: 296px;
+  padding: 48px 96px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.spinnerElement {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--color-background-gray);
+  border-top-color: var(--color-primary-dark);
+  border-radius: 50%;
+  animation: rotationAnimationSpeed 1s linear infinite;
+  margin-bottom: 32px;
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.loadingTitleText {
+  margin: 0;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.loadingParagraphText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-main);
+  text-align: center;
+}
+
+@keyframes rotationAnimationSpeed {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

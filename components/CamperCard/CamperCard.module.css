@@ -1,0 +1,113 @@
+.camperCardContainer {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background-color: var(--color-background-white);
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.camperCardImage {
+  width: 219px;
+  height: 240px;
+  border-radius: 10px;
+  background-color: var(--color-background-gray);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.camperCardDetails {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.camperCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.camperCardName {
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.camperCardPrice {
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.metaInfoRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-accent-star);
+}
+
+.metaIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.cardDescriptionText {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+}
+
+.badgesBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.featureBadgeItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 46px;
+  padding: 12px 18px;
+  background-color: var(--badges);
+  mix-blend-mode: multiply;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.badgeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.showMoreLink {
+  width: 166px;
+  height: 56px;
+  color: var(--white);
+  background-color: var(--color-primary-light);
+  transition: background-color 0.2s ease-in-out;
+  align-self: flex-start;
+}
+
+.showMoreLink:hover,
+.showMoreLink:focus {
+  background-color: var(--color-primary-dark);
+}

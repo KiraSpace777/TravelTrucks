@@ -1,0 +1,91 @@
+.notFoundBlockContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 840px;
+  background-color: var(--inputs);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.imageWrapper {
+  margin-bottom: 21px;
+  flex-shrink: 0;
+}
+
+.textGroupBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 840px;
+  height: 96px;
+  margin-bottom: 43px;
+  box-sizing: border-box;
+}
+
+.notFoundTitleText {
+  margin: 0;
+  font-size: 24px;
+  line-height: 130%;
+  margin-bottom: 12px;
+}
+
+.notFoundDescriptionText {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.actionsRowBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 400px;
+  height: 56px;
+  gap: 16px;
+}
+
+.clearFilterButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 192px;
+  height: 56px;
+  padding: 16px 32px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 200px;
+  background-color: var(--white);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.clearFilterButton:hover,
+.clearFilterButton:focus {
+  border-color: var(--color-primary-dark);
+}
+
+.clearIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.viewAllButton {
+  width: 192px;
+  height: 56px;
+  padding: 16px 32px;
+  color: var(--white);
+  background-color: var(--color-primary-light);
+  border-radius: 200px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.viewAllButton:hover,
+.viewAllButton:focus {
+  background-color: var(--color-primary-dark);
+}
