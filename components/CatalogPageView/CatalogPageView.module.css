@@ -6,6 +6,9 @@
   position: relative;
   z-index: 10;
   background-color: var(--white);
+
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .catalogPageContent {

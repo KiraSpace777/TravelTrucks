@@ -22,6 +22,8 @@
 }
 
 .homePageContent {
+  max-width: 1440px;
+  margin: 0 auto;
   width: 100%;
   padding-top: 195px;
   padding-bottom: 140px;
