@@ -1,0 +1,27 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.md {
+  width: 132px;
+}
+
+.sm {
+  width: 88px;
+}
+
+.lg {
+  width: 152px;
+}
+
+.rating {
+  width: 100%;
+}
+
+.score {
+  font-size: var(--font-size-sm, 14px);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 1;
+}

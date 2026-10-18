@@ -1,0 +1,107 @@
+.galleryBlockWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.mainTopSlider {
+  width: 100%;
+  height: 463px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  position: relative;
+  user-select: none;
+  -webkit-touch-callout: none;
+  object-fit: cover;
+}
+
+.mainSliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  user-select: none;
+  -webkit-user-drag: none;
+  object-fit: cover;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #ffffff !important;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.8)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 1));
+  transition: transform 0.2s ease;
+  user-select: none;
+  outline: none;
+}
+
+:global(.swiper-button-next):after,
+:global(.swiper-button-prev):after {
+  font-size: 32px !important;
+  font-weight: bold;
+}
+
+:global(.swiper-button-next):hover {
+  transform: scale(1.1) translateX(2px);
+}
+
+:global(.swiper-button-prev):hover {
+  transform: scale(1.1) translateX(-2px);
+}
+
+.bottomThumbsSlider {
+  width: 100%;
+  height: 160px;
+  padding-bottom: 16px;
+  user-select: none;
+}
+
+.thumbSliderImageWrapperActive {
+  width: 100%;
+  height: 144px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  opacity: 0.6;
+  transition:
+    opacity 0.2s ease,
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+:global(.swiper-slide-thumb-active) .thumbSliderImageWrapperActive {
+  border-color: #ffffff;
+  opacity: 1;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.9));
+  transform: scale(0.98);
+}
+
+.thumbImageElement {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.swiperScrollbarTarget {
+  width: 100%;
+  height: 4px;
+  background-color: var(--inputs);
+  border-radius: 2px;
+  position: relative;
+  margin-top: 12px;
+}
+
+:global(.swiper-scrollbar-drag) {
+  background-color: #e44848 !important;
+  border-radius: 2px;
+  height: 100%;
+  cursor: pointer;
+}

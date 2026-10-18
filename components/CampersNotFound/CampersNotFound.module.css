@@ -1,43 +1,49 @@
-.notFoundBlockContainer {
+.notFoundContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 840px;
+  height: 100%;
   background-color: var(--inputs);
-  border-radius: 20px;
   box-sizing: border-box;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 16px;
 }
 
 .imageWrapper {
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   flex-shrink: 0;
+  /* object-fit: contain; */
 }
 
 .textGroupBlock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 840px;
-  height: 96px;
+  width: 100%;
   margin-bottom: 43px;
   box-sizing: border-box;
+  gap: 16px;
 }
 
 .notFoundTitleText {
   margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
   font-size: 24px;
-  line-height: 130%;
-  margin-bottom: 12px;
+  line-height: 133%;
 }
 
 .notFoundDescriptionText {
   margin: 0;
   color: var(--color-text-secondary);
   font-size: 16px;
-  line-height: 150%;
-  text-align: center;
+  margin-bottom: 32px;
 }
 
 .actionsRowBlock {
@@ -45,9 +51,18 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 400px;
-  height: 56px;
   gap: 16px;
+}
+
+.clearFilterButton,
+.viewAllButton {
+  width: 192px;
+  height: 56px;
+  padding: 16px 32px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .clearFilterButton {
@@ -56,9 +71,7 @@
   align-items: center;
   justify-content: center;
   gap: 4px;
-  width: 192px;
-  height: 56px;
-  padding: 16px 32px;
+
   border: 1px solid var(--color-border-default);
   border-radius: 200px;
   background-color: var(--white);
@@ -76,12 +89,8 @@
 }
 
 .viewAllButton {
-  width: 192px;
-  height: 56px;
-  padding: 16px 32px;
   color: var(--white);
   background-color: var(--color-primary-light);
-  border-radius: 200px;
   transition: background-color 0.2s ease-in-out;
 }
 

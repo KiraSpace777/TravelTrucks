@@ -3,32 +3,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
-  padding-block: 80px;
+  width: 100%;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
 }
 
-.notFoundIcon {
-  width: 120px;
-  height: 120px;
+.notFoundImage {
   margin-bottom: 24px;
+  object-fit: contain;
 }
 
 .notFoundTitle {
-  font-size: 32px;
-  line-height: 130%;
-  margin-bottom: 12px;
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
 }
 
 .notFoundDescription {
-  color: var(--color-text-secondary);
+  margin-top: 16px;
   margin-bottom: 32px;
+  color: var(--color-text-secondary);
   text-align: center;
 }
 
 .backHomeButton {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 56px;
   color: var(--white);
   background-color: var(--color-primary-light);
   transition: background-color 0.2s ease-in-out;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
 }
 
 .backHomeButton:hover,

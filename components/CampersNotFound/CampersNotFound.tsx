@@ -1,6 +1,5 @@
 "use client";
 
-// import React from "react";
 import Image from "next/image";
 import styles from "./CampersNotFound.module.css";
 
@@ -18,14 +17,15 @@ export const CampersNotFound = ({
   }
 
   return (
-    <div className={styles.notFoundBlockContainer}>
+    <div className={styles.notFoundContainer}>
       <div className={styles.imageWrapper}>
         <Image
           src="/image/no-campers-found.png"
           alt="No campers found"
           width={488}
-          height={463}
+          height={464}
           priority={true}
+          className={styles.notFoundImage}
         />
       </div>
 

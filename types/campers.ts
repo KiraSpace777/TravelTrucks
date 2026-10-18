@@ -51,6 +51,7 @@ export interface CamperDetailsEntity extends Omit<CamperListItemDto, "coverImage
   gallery: CamperImageEntity[];
   createdAt: string;
   updatedAt: string;
+  reviews: ReviewEntity[];
 }
 
 export interface ReviewEntity {

@@ -1,0 +1,221 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+  width: 100%;
+  padding: 64px;
+}
+
+.firstContentBlock,
+.secondContentBlock {
+  display: flex;
+  width: 100%;
+  max-width: 1312px;
+}
+
+.firstContentBlock {
+  gap: 24px;
+  flex-direction: row;
+}
+
+.camperGallerySection {
+  max-width: 638px;
+}
+
+.camperInfoSection {
+  max-width: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.camperInfoGeneral {
+  border-radius: 16px;
+  padding: 24px;
+  background: var(--inputs);
+}
+
+/* .camperInfoMetrics{} */
+
+.secondContentBlock {
+  gap: 24px;
+  display: block;
+  /* padding: 24px; */
+}
+
+.secondBlockGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+/* .camperReviewsSection {} */
+/* .camperBookingSection {} */
+
+.mainHeaderInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.camperName {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--color-text-main);
+}
+
+.metaRowRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.metaItemBlock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.starIcon {
+  width: 16px;
+  height: 16px;
+  fill: #ffc531;
+}
+
+.mapIcon {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-text-main);
+}
+
+.camperPriceText {
+  margin: 0;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--color-text-main);
+}
+
+.descriptionParagraph {
+  margin: 28px 0 0 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text-secondary);
+}
+
+.reviewsSectionTitle {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--color-text-main);
+}
+
+.toastOverlayBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16, 24, 40, 0.4);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInEffect 0.2s ease-out;
+}
+
+.toastCentralCardBox {
+  position: relative;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 24px rgba(16, 24, 40, 0.08);
+  animation: scaleUpEffect 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.toastCloseCrossButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.toastCloseIconSvg {
+  width: 16px;
+  height: 16px;
+  fill: #101828;
+  transition: transform 0.2s ease;
+}
+
+.toastCloseCrossButton:hover .toastCloseIconSvg {
+  transform: scale(1.1);
+}
+
+.toastSuccessCheckCircle {
+  width: 64px;
+  height: 64px;
+  background-color: #f2f4f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toastSuccessCheckIcon {
+  width: 28px;
+  height: 28px;
+  fill: #ffc531;
+}
+
+.toastMainHeadlineText {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  line-height: 120%;
+  color: #101828;
+}
+
+.toastBodyMessageText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 150%;
+  color: #475467;
+}
+
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUpEffect {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
