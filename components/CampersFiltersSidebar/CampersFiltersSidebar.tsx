@@ -1,3 +1,5 @@
+//
+
 "use client";
 
 import React, { useState } from "react";
@@ -10,6 +12,7 @@ import {
 import styles from "./CampersFiltersSidebar.module.css";
 
 interface CampersFiltersSidebarProperties {
+  activeFiltersValueObject: CatalogFiltersState;
   onApplyFilters: (newFiltersState: CatalogFiltersState) => void;
 }
 
@@ -20,9 +23,13 @@ const INITIAL_LOCAL_FILTERS: CatalogFiltersState = {
   engine: "",
 };
 
-export const CampersFiltersSidebar = ({ onApplyFilters }: CampersFiltersSidebarProperties) => {
-  const [localFiltersState, setLocalFiltersState] =
-    useState<CatalogFiltersState>(INITIAL_LOCAL_FILTERS);
+export const CampersFiltersSidebar = ({
+  activeFiltersValueObject,
+  onApplyFilters,
+}: CampersFiltersSidebarProperties) => {
+  const [localFiltersState, setLocalFiltersState] = useState<CatalogFiltersState>(
+    activeFiltersValueObject || INITIAL_LOCAL_FILTERS,
+  );
 
   const handleLocationChange = (eventInstance: React.ChangeEvent<HTMLInputElement>) => {
     setLocalFiltersState((previousState) => ({
@@ -211,7 +218,6 @@ export const CampersFiltersSidebar = ({ onApplyFilters }: CampersFiltersSidebarP
                   className={styles.nativeRadioInput}
                 />
               </span>
-
               <span className={`${styles.optionTextLabel} interRegular`}>Manual</span>
             </label>
           </div>
@@ -222,15 +228,10 @@ export const CampersFiltersSidebar = ({ onApplyFilters }: CampersFiltersSidebarP
             Search
           </button>
           <button type="button" onClick={handleClearFiltersClick} className={styles.clearButton}>
-            <span className={styles.clearButtonContent}>
-              <span>
-                <svg className={styles.clearIcon}>
-                  <use href="/sprite.svg#icon-close" />
-                </svg>
-              </span>
-
-              <span>Clear filters</span>
-            </span>
+            <svg className={styles.clearFiltersIconCross} style={{ width: "16px", height: "16px" }}>
+              <use href="/sprite.svg#icon-close" />
+            </svg>
+            <span className={`${styles.clearFiltersButtonText} interMedium`}>Clear filters</span>
           </button>
         </div>
       </form>
